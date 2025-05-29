@@ -156,7 +156,7 @@ header {
 /******************* HomePage Css Starts ************************************/
 /****************************************************************************/
 .index__Section1 {
-    /* background: url('../images/home-banner.webp'); */
+    background: url('../images/cleaning-banner-01.png'); 
     background-size: cover;
     min-height: 610px;
     padding-top: 170px;
