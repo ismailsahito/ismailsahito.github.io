@@ -926,12 +926,15 @@ footer section{
     justify-content: space-between;
 }
 
-.footer__columns__wrapper .footer__columns.first,
+.footer__columns__wrapper .footer__columns.first
+{
+	width: 20%;
+}
 .footer__columns__wrapper .footer__columns.last {
-    width: 22%;
+    width: 40%;
 }
 .footer__columns__wrapper .footer__columns {
-    width: 16%;
+    width: 20%;
 }
 .footer__logo {
     display: inline-block;
