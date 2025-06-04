@@ -53,6 +53,11 @@ li {
   text-transform: uppercase;
   padding: 13px 20px;
 }
+.footer__columns li {
+  list-style-type: none;
+  text-transform: uppercase;
+  padding: 0px 0px !important;
+}
 button {
 	border: none;
 	outline: none;
@@ -180,7 +185,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    width: 850px;
+    width: 750px;
     margin-top: 60px;
 }
 .services__List .service__box {
