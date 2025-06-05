@@ -751,7 +751,27 @@
     <script src="assets/js/custom.js"></script>
 
     <script>
-   
+    var swiper = new Swiper('.before__after__slider', {
+  slidesPerView: 1,
+  spaceBetween: 0,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  on: {
+    slideChange: function () {
+      // Loop through all slides and toggle images
+      document.querySelectorAll('.swap-image').forEach(img => {
+        const currentSrc = img.getAttribute('src');
+        const original = img.getAttribute('data-original');
+        const swap = img.getAttribute('data-swap');
+
+        // Swap image source
+        img.setAttribute('src', currentSrc === original ? swap : original);
+      });
+    }
+  }
+});
     </script>
 </body>
 </html>
