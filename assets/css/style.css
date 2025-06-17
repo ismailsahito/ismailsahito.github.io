@@ -664,7 +664,7 @@ header {
 }
 .inner__banner__wrapper .rightCol {
     position: relative;
-    width: 44%;
+    width: 54%;
     display: flex;
     justify-content: center;
 }
@@ -683,9 +683,9 @@ header {
     padding: 10px 20px;
 }
 .banner__img {
-    border-radius: 50%;
-    width: 500px;
-    height: 500px;
+   /* border-radius: 50%; */
+    width: 405px;
+    height: 481px;
 }
 .offer__box {
     width: 200px;
