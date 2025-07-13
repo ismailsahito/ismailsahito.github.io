@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Cleaning Categories</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f7fa;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 40px 0 10px;
+      font-size: 2.5rem;
+      color: #264653;
+    }
+
+    .categories-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    .category-card {
+      background-color: #20a4f3;
+      color: white;
+      width: 300px;
+      border-radius: 20px;
+      padding: 30px 20px 20px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      position: relative;
+      transition: transform 0.3s;
+	  margin-bottom: 50px; /* Adds space between rows */
+    }
+
+    .category-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .category-icon {
+      background-color: white;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      margin: 0 auto;
+      margin-top: -60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .category-icon img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .category-title {
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin: 20px 0 10px;
+    }
+
+    .category-desc {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: #eef9ff;
+    }
+
+    .book-btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: white;
+      color: #20a4f3;
+      font-weight: bold;
+      border-radius: 30px;
+      text-decoration: none;
+      display: inline-block;
+      border: 2px solid transparent;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .book-btn:hover {
+      background-color: transparent;
+      color: white;
+      border: 2px solid white;
+    }
+
+    @media (max-width: 768px) {
+      .categories-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Our Service Categories</h1>
+
+  <div class="categories-container">
+
+    <div class="category-card">
+      <div class="category-icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/833/833593.png" alt="Home Deep Cleaning" />
+      </div>
+      <div class="category-title">Home Deep Cleaning</div>
+      <div class="category-desc">
+        Full-house cleaning covering furniture, sofas, carpets, mattresses and more for a spotless living space.
+      </div>
+      <a href="#" class="book-btn">Book Now</a>
+    </div>
+
+    <div class="category-card">
+      <div class="category-icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/2659/2659980.png" alt="AC Cleaning" />
+      </div>
+      <div class="category-title">AC Service / Cleaning</div>
+      <div class="category-desc">
+        Thorough AC cleaning and servicing to ensure cool, clean air and optimal performance of your units.
+      </div>
+      <a href="#" class="book-btn">Book Now</a>
+    </div>
+
+    <div class="category-card">
+      <div class="category-icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/2830/2830302.png" alt="Painting Service" />
+      </div>
+      <div class="category-title">Painting Service</div>
+      <div class="category-desc">
+        Interior & exterior painting with expert finish and premium paints for homes and offices.
+      </div>
+      <a href="#" class="book-btn">Book Now</a>
+    </div>
+
+    <div class="category-card">
+      <div class="category-icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/4150/4150896.png" alt="Marble Polishing" />
+      </div>
+      <div class="category-title">Marble Polishing</div>
+      <div class="category-desc">
+        Professional marble restoration to bring back the shine, smoothness and luxury feel to your floors.
+      </div>
+      <a href="#" class="book-btn">Book Now</a>
+    </div>
+
+    <div class="category-card">
+      <div class="category-icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" alt="Water Tank Cleaning" />
+      </div>
+      <div class="category-title">Water Tank Cleaning</div>
+      <div class="category-desc">
+        Get rid of mud, algae, bacteria and more from your overhead and underground water tanks.
+      </div>
+      <a href="#" class="book-btn">Book Now</a>
+    </div>
+
+    <div class="category-card">
+      <div class="category-icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/4003/4003513.png" alt="Wooden Floor Polishing" />
+      </div>
+      <div class="category-title">Wooden Floor Polishing</div>
+      <div class="category-desc">
+        Restore the elegance of parquet/wood flooring with our polishing and scratch-removal treatment.
+      </div>
+      <a href="#" class="book-btn">Book Now</a>
+    </div>
+
+  </div>
+
+</body>
+</html>

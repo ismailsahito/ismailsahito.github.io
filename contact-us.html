@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/font-awesome.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
@@ -12,39 +13,203 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
     <title>Kashaf Restoration Technical Services</title>
 
-    	<style>
-	.copyright__bar {
-  background: #f8f8f8; /* Optional styling */
-  padding: 15px 0;
-		
-}
-.copyright__wrapper {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  flex-wrap: wrap; /* Wrap links on smaller screens */
-}
+    <style>
+        .copyright__bar {
+            background: #f8f8f8;
+            padding: 15px 0;
+        }
 
-.copyright__content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-}
+        .copyright__wrapper {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-wrap: wrap;
+        }
 
-.copyright__content a {
-  margin: 0 5px;
-  text-decoration: none;
-}
-.copyright__content {
-  text-align: center;
-}
+        .copyright__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
 
-.copyright__content a {
-  margin: 0 10px;
-}
+        .copyright__content a {
+            margin: 0 5px;
+            text-decoration: none;
+        }
 
-	</style>
+        .copyright__content {
+            text-align: center;
+        }
+
+        .copyright__content a {
+            margin: 0 10px;
+        }
+
+        /* Header with background image */
+        header {
+            background-image: url('assets/images/backround_bannerr1.png');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            padding: 0 0 40px 0;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+
+            z-index: 0;
+        }
+
+        header .container,
+        header .navigation__wrapper {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* About Us page title */
+        .page__title {
+            font-size: 2.5rem;
+            color: navy;
+            text-align: center;
+            margin-top: 40px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Navigation styling */
+        .navigation__wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .navigation__wrapper ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navigation__wrapper ul li {
+            margin: 0 15px;
+        }
+
+
+
+        .cta {
+            background: #fff;
+            color: #333;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .inner__pages__banner {
+            padding: 65px 0 50px;
+        }
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-papnmTnA9nqL3VmClCk5WfU0k5kzAwJypYoKHYF2i5N8lKkKvmDL1e5r03XvU8DlqI4y1tKpZV7A7JhUO3xF+Q=="
+
+        crossorigin="anonymous" referrerpolicy="no-referrer" /><style>.contact_label {
+            color: #1d45a0;
+            font-weight: bold;
+            font-size: 40px;
+        }
+
+        .contact-info {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .contact-info h2 {
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        .contact-info i {
+            margin-right: 10px;
+            color: #007bff;
+        }
+
+        .map {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+    </style>
+
+    <style>
+        .copyright__bar {
+            background: #f8f8f8;
+            /* Optional styling */
+            padding: 15px 0;
+
+        }
+
+        .copyright__wrapper {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-wrap: wrap;
+            /* Wrap links on smaller screens */
+        }
+
+        .copyright__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .copyright__content a {
+            margin: 0 5px;
+            text-decoration: none;
+        }
+
+        .copyright__content {
+            text-align: center;
+        }
+
+        .copyright__content a {
+            margin: 0 10px;
+        }
+
+        .contact-image {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .contact-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    </style>
 
 </head>
 
@@ -63,14 +228,14 @@
                         <a href="about-us.html">About US</a>
                     </li>
                     <li>
-                        <a href="#!">Services</a>
+                        <a href="services.html">Services</a>
                     </li>
                     <li>
                         <a href="contact-us.html">Contact Us</a>
                     </li>
                 </ul>
-                <button class="cta trigger">
-                    Get A Quote
+                <button class="cta ">
+                    Get in Touch
                 </button>
                 <div class="navigation__toggler">
                     <span></span>
@@ -78,6 +243,7 @@
                     <span></span>
                 </div>
             </div>
+            <h1 class="page__title">Contact Us</h1>
         </div>
     </header>
 
@@ -85,384 +251,34 @@
         <div class="container">
             <div class="inner__banner__wrapper">
                 <div class="leftCol">
-                    <h5 class="section__heading margin-bottom-30">Contact us</h5>
-                    <p class="section__description margin-bottom-20">
-                       Talk to a member of our team. We’re here to help and answer any question you might have. We look forward to hearing from you.
-                    </p>
-					
-					<div class="address section__description margin-bottom-15">
-						<h4><b>Address</b></h2>
-						<p class="section__description">
-							Invox Business Center (Business Bay Branch)
-						</p>
-					</div>
-					
-					<div class="address section__description margin-bottom-15">
-						<h4><b>Email</b></h2>
-						<p class="section__description">
-							<a href="mailto:kashaftechnical@gmail.com">kashaftechnical@gmail.com</a>
-						</p>
-					</div>
-					
-					<div class="address section__description">
-						<h4><b>Phone</b></h2>
-						<p class="section__description">
-							<a href="tel:058-9545813">058-9545813</a>
-						</p>
-					</div>
-                  
+
+                    <div class="contact-info">
+                        <h5 class="section__heading margin-bottom-30">Contact us</h5>
+
+                        <p>Talk to a member of our team. We’re here to help and answer any question you might have. We
+                            look forward to hearing from you.</p>
+
+                        <p><i class="fas fa-map-marker-alt"></i><strong>Address:</strong><br> Invox Business Center
+                            (Business Bay Branch)</p>
+
+                        <p><i class="fas fa-envelope"></i><strong>Email:</strong><br> <a
+                                href="mailto:kashaftechnical@gmail.com">kashaftechnical@gmail.com</a></p>
+
+                        <p><i class="fas fa-phone-alt"></i><strong>Phone:</strong><br> <a
+                                href="tel:058-9545813">058-9545813</a></p>
+                    </div>
+
                 </div>
                 <div class="rightCol">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14442.082875081918!2d55.2756837!3d25.1856563!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f696ce5acb235%3A0x76ef71dc2ae7677a!2sInvox%20Business%20Center%20(Business%20Bay%20Branch)!5e0!3m2!1sen!2s!4v1748706745389!5m2!1sen!2s" 
-						title="Location in the map" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">ac duct cleaning, ac repair, carpet cleaning</iframe>
-                    
+
+                    <img src="assets/images/contact_left.jpg" alt="Contact Us" />
+
+
                 </div>
+
             </div>
         </div>
     </section>
-
-    <!-- <section class="about__section2">
-        <div class="container">
-            <img src="./assets/images/about-us/timeline-image.jpg" alt="timeline">
-        </div>
-    </section> -->
-
-   <!--  <section class="about__section3">
-        <div class="container">
-            <div class="inner__counter__wrapper">
-                <div class="leftCol">
-                    <h5 class="section__heading">Your indoor environment can have a huge impact on your health and
-                        wellness</h5>
-                    <p class="section__description">We are passionate about making holistic wellness a bigger part of
-                        your daily life, by bringing a variety of premium home and personal wellness services to your
-                        doorsteps.</p>
-                </div>
-                <div class="rightCol">
-                    <div class="counter__wrapper">
-                        <div class="counter__box">
-                            <p class="count">4.9/5*</p>
-                            <p class="label">Google Rating</p>
-                        </div>
-                        <div class="counter__box">
-                            <p class="count">52K+</p>
-                            <p class="label">Happy Customers</p>
-                        </div>
-                        <div class="counter__box">
-                            <p class="count">100K+</p>
-                            <p class="label">Completed Services</p>
-                        </div>
-                        <div class="counter__box">
-                            <p class="count">03</p>
-                            <p class="label">Countries</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- <section class="about__section4">
-        <div class="container">
-            <h5 class="section__heading">Our divisions</h5>
-            <div class="division__wrapper">
-                <div class="division__column">
-                    <img src="./assets/images/about-us/healthy-home.jpg" alt="healthy home">
-                    <h4>Healthy Home®</h4>
-                    <p>We concentrate on cultivating environments and services that promote wellness, fostering healthy
-                        habits. We're dedicated to empowering you to live your healthiest life.</p>
-                </div>
-                <div class="division__column">
-                    <img src="./assets/images/about-us/healthy-home.jpg" alt="healthy hospitality">
-                    <h4>Healthy Hospitality®</h4>
-                    <p>We help some of the world’s ﬁnest hospitality chains maintain high health and safety standards
-                        essential for their business.</p>
-                </div>
-                <div class="division__column">
-                    <img src="./assets/images/about-us/healthy-education.jpg" alt="healthy education">
-                    <h4>Healthy Education®</h4>
-                    <p>We keep children’s environments clean & safe by eliminating airborne contaminants in classrooms
-                        and common areas</p>
-                </div>
-                <div class="division__column">
-                    <img src="./assets/images/about-us/healthy-workspace.jpg" alt="healthy workspace">
-                    <h4>Healthy Workspace®</h4>
-                    <p>We focus on enhancing indoor environmental quality and increasing workplace productivity. We are
-                        committed to fostering healthy and productive environments.</p>
-                </div>
-                <div class="division__column">
-                    <img src="./assets/images/about-us/healthy-fitness.jpg" alt="healthy fitness">
-                    <h4>Healthy Fitness®</h4>
-                    <p>We enhance gyms, studios and spas in promoting a holistic healthy lifestyle by creating a safe
-                        environment for their customers</p>
-                </div>
-                <div class="division__column">
-                    <img src="./assets/images/about-us/healthy-transportation.jpg" alt="healthy transportation®">
-                    <h4>Healthy Transportation®</h4>
-                    <p>We provide advanced eco-friendly and natural disinfection technologies to eliminate all harmful
-                        germs in boats, vans, busses, and planes</p>
-                </div>
-                <div class="division__column">
-                    <img src="./assets/images/about-us/healthy-clinic.jpg" alt="healthy clinic">
-                    <h4>Healthy Clinic®</h4>
-                    <p>We help the region’s top healthcare providers ensure patient safety by maintaining the best
-                        indoor environmental quality and eliminating airborne pollutants</p>
-                </div>
-                <div class="division__column">
-                    <img src="./assets/images/about-us/healthy-mosque.jpg" alt="healthy mosque">
-                    <h4>Healthy Mosque®</h4>
-                    <p>We provide mosques with premium eco-friendly sanitization services to maintain a healthy and safe
-                        indoor environment</p>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-  <!--   <section class="about__section5">
-        <div class="container">
-            <h5 class="section__heading">Explore our Services</h5>
-            <div class="explore__services__wrapper">
-                <div class="swiper explore__services__slider">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <a href="#!" class="service__card">
-                                <img src="./assets/images/about-us/services/ac-cleaning.webp" alt="ac cleaning">
-                                <div class="service__description">
-                                    <p class="service__title">AC Cleaning Services</p>
-                                    <p class="service__content">Experience improved indoor air quality and cooling by regularly keeping your AC
-                                        clean with the help of our professional AC cleaning in Dubai and the UAE.
-                                        Contact us today to book your AC duct cleaning services!</p>
-                                    <span class="cta">View</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#!" class="service__card">
-                                <img src="./assets/images/about-us/services/mattress-cleaning.webp" alt="mattress cleaning">
-                                <div class="service__description">
-                                    <p class="service__title">Mattress Cleaning Services</p>
-                                    <p class="service__content">The Healthy Home® provides the best professional mattress cleaning in Dubai and
-                                        Abu
-                                        Dhabi. Call us now to schedule your dry and chemical-free mattress cleaning and
-                                        sanitization service.</p>
-                                        <span class="cta">View</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#!" class="service__card">
-                                <img src="./assets/images/about-us/services/pest-control.webp" alt="pest control">
-                                <div class="service__description">
-                                    <p class="service__title">Pest Control Services</p>
-                                    <p class="service__content">The Healthy Home® provides traditional &amp; organic pest control in Dubai &amp;
-                                        Abu
-                                        Dhabi. Call us now to schedule your SPC® Safe pest control services from The
-                                        Healthy
-                                        Home®.</p>
-                                        <span class="cta">View</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#!" class="service__card">
-                                <img src="./assets/images/about-us/services/water-tank-cleaning.webp" alt="water tank cleaning">
-                                <div class="service__description">
-                                    <p class="service__title">Water Tank Cleaning Services</p>
-                                    <p class="service__content">Ensure you have a clean and pure water supply at your home with The Healthy
-                                        Home®’s
-                                        Pure Water® premium water tank cleaning and sanitization services in UAE.</p>
-                                        <span class="cta">View</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#!" class="service__card">
-                                <img src="./assets/images/about-us/services/ac-maintenance-repair.webp" alt="ac maintenance repair">
-                                <div class="service__description">
-                                    <p class="service__title">AC Maintenance and Repair Services</p>
-                                    <p class="service__content">The Healthy Home® offers the best AC repairing and maintenance services in the
-                                        UAE.
-                                        Maintain the cooling and efficiency of your air conditioning system with a
-                                        premium
-                                        touch. Call us now to schedule your professional AC maintenance and repair
-                                        services.
-                                    </p>
-                                    <span class="cta">View</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#!" class="service__card">
-                                <img src="./assets/images/about-us/services/sofa-cleaning.webp" alt="sofa cleaning">
-                                <div class="service__description">
-                                    <p class="service__title">Sofa Cleaning Services</p>
-                                    <p class="service__content">The Healthy Home® provides the best sofa cleaning in Dubai &amp; Abu Dhabi. Call
-                                        us
-                                        now to schedule your safe &amp; eco-friendly sofa cleaning &amp; sanitization
-                                        services.</p>
-                                        <span class="cta">View</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#!" class="service__card">
-                                <img src="./assets/images/about-us/services/disinfection-sanitization-services.webp" alt="sanitization">
-                                <div class="service__description">
-                                    <p class="service__title">Disinfection &amp; Sanitization Services</p>
-                                    <p class="service__content">The Healthy Home® provides the best disinfection &amp; sanitization services in Dubai
-                                        &amp; Abu Dhabi. Call us now to schedule your eco-friendly treatment!</p>
-                                        <span class="cta">View</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#!" class="service__card">
-                                <img src="./assets/images/about-us/services/carpet-cleaning-services.webp" alt="carpet cleaning">
-                                <div class="service__description">
-                                    <p class="service__title">Carpet Cleaning Services</p>
-                                    <p class="service__content">Get the perfect carpet cleaning service from The Healthy Home®. Contact us to
-                                        experience our professional carpet cleaning in Dubai, Abu Dhabi, and Sharjah.</p>
-                                        <span class="cta">View</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#!" class="service__card">
-                                <img src="./assets/images/about-us/services/mold-service.webp" alt="mold services">
-                                <div class="service__description">
-                                    <p class="service__title">Mold Removal Services</p>
-                                    <p class="service__content">Rejuvenate your indoor air quality with premium mold removal in Dubai and all across
-                                        the UAE. Keep your loved ones and you protected from allergies and asthma issues!
-                                    </p>
-                                    <span class="cta">View</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#!" class="service__card">
-                                <img src="./assets/images/about-us/services/home-room-sanitazition.webp" alt="home room sanitization">
-                                <div class="service__description">
-                                    <p class="service__title">Home &amp; Room Sanitization Packages</p>
-                                    <p class="service__content"></p>
-                                    <span class="cta">View</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#!" class="service__card">
-                                <img src="./assets/images/about-us/services/furniture-cleaning.webp" alt="furniture cleaning">
-                                <div class="service__description">
-                                    <p class="service__title">Furniture Cleaning Services</p>
-                                    <p class="service__content">Expert upholstery furniture cleaner services from The Healthy Home®. Choose between
-                                        upholstery shampooing or dry treatment services for your sofa, carpet, curtains, and
-                                        more! Contact us today.</p>
-                                        <span class="cta">View</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#!" class="service__card">
-                                <img src="./assets/images/about-us/services/upholstery-shampooing.webp" alt="upholstery shampooing">
-                                <div class="service__description">
-                                    <p class="service__title">Upholstery Shampooing and Stain Removal Services</p>
-                                    <p class="service__content">The Healthy Home® offers professional upholstery shampooing services for your couch,
-                                        sofa, mattress, or carpet. Book your service today.</p>
-                                        <span class="cta">View</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#!" class="service__card">
-                                <img src="./assets/images/about-us/services/ac-duct-cleaning.webp" alt="a duct cleaning">
-                                <div class="service__description">
-                                    <p class="service__title">AC Duct Cleaning Services</p>
-                                    <p class="service__content">The Healthy Home® offers the best cleaning of AC ducts to help you breathe better and
-                                        sleep better. Call us now to schedule an eco-friendly service performed by
-                                        professional AC duct cleaners in the UAE.</p>
-                                        <span class="cta">View</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#!" class="service__card">
-                                <img src="./assets/images/about-us/services/bed-bugs-pest-control.webp" alt="pest control">
-                                <div class="service__description">
-                                    <p class="service__title">Bed Bug Pest Control</p>
-                                    <p class="service__content">Don&#039;t let bed bugs disrupt your peace of mind any longer. Contact the Healthy
-                                        Home® for reliable bed bug extermination services in the UAE.</p>
-                                        <span class="cta">View</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#!" class="service__card">
-                                <img src="./assets/images/about-us/services/full-ac-cleaning.webp" alt="ac cleaning">
-                                <div class="service__description">
-                                    <p class="service__title">Full AC Cleaning Services</p>
-                                    <p class="service__content">Get comprehensive full AC system cleaning services covering the deep cleaning of all
-                                        AC parts, including AC ducts, fan motors and blowers, coils, and more. Book our
-                                        service today to breathe better, maintain better airflow quality, and consistent AC
-                                        cooling.</p>
-                                        <span class="cta">View</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#!" class="service__card">
-                                <img src="./assets/images/about-us/services/premium-deep-cleaning.webp" alt="deep cleaning">
-                                <div class="service__description">
-                                    <p class="service__title">Premium Deep Cleaning Services</p>
-                                    <p class="service__content">Experience enhanced cleanliness with our premium deep cleaning services. Receive
-                                        advanced, eco-friendly treatment to make your home or office shine like new.</p>
-                                        <span class="cta">View</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#!" class="service__card">
-                                <img src="./assets/images/about-us/services/curtain-cleaning.webp" alt="curtain cleaning">
-                                <div class="service__description">
-                                    <p class="service__title">Curtain Cleaning Services</p>
-                                    <p class="service__content">The Healthy Home® provides premium curtain cleaning in Dubai &amp; Abu Dhabi. Call us
-                                        to schedule your professional curtain cleaning services.</p>
-                                        <span class="cta">View</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="swiper-button-next">
-                        <img src="assets/images/next-button.svg" alt="next">
-                    </div>
-                    <div class="swiper-button-prev">
-                        <img src="assets/images/prev-button.svg" alt="previous">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
- -->
-    <!-- <section class="about__section6">
-        <div class="container">
-            <div class="app__installer_wrapper">
-                <div class="leftCol">
-                    <h5 class="section__heading">Coming Soon: The Healthy Home® App</h5>
-                    <p class="section__description">Experience The Healthy Home®, your premium choice for home and personal wellness services, where you can select, schedule, and relax while choosing the care your family deserves.</p>
-                    <div class="app__installers">
-                        <a href="#!">
-                            <img src="./assets/images/about-us/app-store-btn.webp" alt="app store">
-                        </a>
-                        <a href="#!">
-                            <img src="./assets/images/about-us/play-store-btn.webp" alt="play store">
-                        </a>
-                    </div>
-                </div>
-                <div class="rightCol">
-                    <img src="./assets/images/about-us/app-img.webp" alt="app image">
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-  
 
     <section class="index__Section13">
         <div class="container">
@@ -472,7 +288,6 @@
                     <p class="section__description">Reach out to us through any of these channels</p>
                 </div>
                 <div class="rightCol">
-                    
                     <div class="contact__box">
                         <span class="contact__icon">
                             <img src="./assets/images/email-icon.webp" alt="email">
@@ -513,7 +328,7 @@
                         <p class="footer__labels">Why Us</p>
                         <ul>
                             <li><a href="about-us.html">About Us</a></li>
-                            <li><a href="#!">Services</a></li>
+                            <li><a href="services.html">Services</a></li>
                             <li><a href="contact-us.html">Contact Us</a></li>
                         </ul>
                     </div>
@@ -528,63 +343,26 @@
                         </div>
                     </div>
                     <div class="footer__columns last">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14442.082875081918!2d55.2756837!3d25.1856563!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f696ce5acb235%3A0x76ef71dc2ae7677a!2sInvox%20Business%20Center%20(Business%20Bay%20Branch)!5e0!3m2!1sen!2s!4v1748706745389!5m2!1sen!2s" 
-						title="Location in the map" width="100%" height="260" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">ac duct cleaning, ac repair, carpet cleaning</iframe>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14442.082875081918!2d55.2756837!3d25.1856563!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f696ce5acb235%3A0x76ef71dc2ae7677a!2sInvox%20Business%20Center%20(Business%20Bay%20Branch)!5e0!3m2!1sen!2s!4v1748706745389!5m2!1sen!2s"
+                            title="Location in the map" width="100%" height="260" style="border:0;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
         </section>
-       <div class="copyright__bar">
+        <div class="copyright__bar">
             <div class="container">
                 <div class="copyright__wrapper">
                     <div class="copyright__content">
                         <p>Copyright © 2025 Kashaf Restoration Technical Services. All Rights Reserved.</p>
-                        
                     </div>
-                  
                 </div>
             </div>
         </div>
     </footer>
 
-    <div class="modal">
-        <div class="modal-content">
-            <div class="modal__header">
-                <span class="close-button">&times;</span>
-                <h2>Get A Quote</h2>
-            </div>
-            <form action="">
-                <div class="field__box">
-                    <p>First Name</p>
-                    <input type="text" placeholder="First Name">
-                </div>
-                <div class="field__box">
-                    <p>Last Name</p>
-                    <input type="text" placeholder="Last Name">
-                </div>
-                <div class="field__box">
-                    <p>Email</p>
-                    <input type="email" placeholder="Enter Your Email">
-                </div>
-                <div class="field__box">
-                    <p>Service</p>
-                    <select name="" id="">
-                        <option value="">Service 1</option>
-                        <option value="">Service 2</option>
-                        <option value="">Service 3</option>
-                        <option value="">Service 4</option>
-                        <option value="">Service 5</option>
-                        <option value="">Service 6</option>
-                    </select>
-                </div>
-                <div class="field__box">
-                    <p>Your Message</p>
-                    <textarea name="" placeholder="Type Your Message"></textarea>
-                </div>
-                <button type="button" class="cta">Submit</button>
-            </form>
-        </div>
-    </div>
+
 
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery-3.5.1.min.js"></script>
