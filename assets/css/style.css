@@ -1361,3 +1361,7 @@ footer section {
 .margin-bottom-15 {
     margin-bottom: 15px;
 }
+
+.category-card a:focus {    
+    color: #20a4f3 !important; 
+}
